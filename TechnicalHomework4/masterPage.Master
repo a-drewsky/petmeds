@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="masterPage.master.cs" Inherits="TechnicalHomework4.masterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="row text-center p-3 m-5 rounded-pill bg-light">
+                <div class="col-12">
+                    <h1 class="text-primary">Pet Med System UI</h1>
+                </div>
+            </div>
+            <div class="row text-center p-2 m-5 rounded-pill bg-info w-50 mx-auto">
+                <div class="col">
+                    <a class="text-white" href="Default.aspx">Vet Page</a>
+                </div>
+                <div class="col">
+                    <a class="text-white" href="page2.aspx">Service Rep Page</a>
+                </div>
+                <div class="col">
+                    <a class="text-white" href="page3.aspx">Dispenser Page</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
